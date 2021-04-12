@@ -85,7 +85,7 @@ switch (dan) {
         console.log('nevazeci dan');
 }
 
-*/
+
 
 const dan = 'cetvrtak';
 
@@ -102,3 +102,28 @@ if (dan === 'ponedeljak') {
 } else {
     console.log('nevazeci dan');
 }
+
+
+const age = 17;
+const drink = age >= 18 ? 'wine' : 'water';
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+    drink2 = 'wine';
+} else {
+    drink2 = 'water';
+};
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+*/
+
+
+const bill = 430;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(`the bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
+
