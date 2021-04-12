@@ -23,7 +23,7 @@ if (markBMI > johnBMI) {
 } else {
     console.log('john has higher BMI');
 
-*/
+
 
 const hightMark = 1.76;
 const massMark = 95;
@@ -40,3 +40,65 @@ if (markBMI > johnBMI) {
 } else {
     console.log(`john's BMI (${johnBMI}) is higher than Mark's (${markBMI}).`)
 };
+
+
+
+const avgDolphins = (97 + 112 + 101) / 3
+const avgKoalas = (109 + 95 + 123) / 3
+
+if (avgKoalas > avgDolphins && avgKoalas >= 100) {
+    console.log('Koalas wins');
+
+} else if (avgDolphins > avgKoalas && avgDolphins >= 100) {
+    console.log('dolphins wins');
+} else {
+    console.log('nobody wins');
+};
+
+
+
+
+
+const dan = 'subota';
+
+
+switch (dan) {
+    case 'ponedeljak':
+        console.log('laganica trcanje');
+        console.log('na posao u vu');
+        break;
+    case 'utorak':
+        console.log('trening snage i rame');
+        break;
+    case 'srijeda':
+    case 'cetvrtak':
+        console.log('lagano trcanje');
+        break;
+    case 'petak':
+        console.log('trening snaage i rame');
+        break;
+    case 'subota':
+    case 'nedjelja':
+        console.log('negdje na izlet');
+        break;
+    default:
+        console.log('nevazeci dan');
+}
+
+*/
+
+const dan = 'cetvrtak';
+
+if (dan === 'ponedeljak') {
+    console.log('laganica trcanje, na posao u vu');
+} else if (dan === 'utorak') {
+    console.log('trening snage i rame');
+} else if (dan === 'srijeda' || dan === 'cetvrtak') {
+    console.log('lagano trcanje');
+} else if (dan === 'petak') {
+    console.log('trening snage i rame');
+} else if (dan === 'subota' || dan === 'nedjelja') {
+    console.log('negdje na izlet');
+} else {
+    console.log('nevazeci dan');
+}
