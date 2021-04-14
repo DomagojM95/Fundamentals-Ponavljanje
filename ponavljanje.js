@@ -118,7 +118,7 @@ console.log(drink2);
 
 console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
 
-*/
+
 
 
 const bill = 430;
@@ -127,3 +127,27 @@ const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 
 console.log(`the bill was ${bill}, the tip was ${tip}, and the total value is ${bill + tip}`);
 
+*/
+
+'use strict';
+
+
+function fruitProcessor(apples, oranges) {
+    const jucie = `juice with ${apples} apples and ${oranges} oranges.`;
+    return jucie;
+}
+
+const appleJuice = fruitProcessor(5, 0);
+console.log(appleJuice);
+
+console.log(fruitProcessor(5, 7));
+
+function describeCountry(country, population, capitality) {
+    const description = `${country} has ${population} million people nad its capital citiy is ${capitality}`
+    return description;
+}
+
+
+const country1 = describeCountry('Finland', 6, 'Helsinki');
+console.log(country1);
+const country2 = describeCountry('Hrvatska', 4, 'Zagreb'); console.log(country2);
