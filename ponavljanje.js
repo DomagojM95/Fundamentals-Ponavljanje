@@ -196,7 +196,7 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 console.log(fruitProcessor(2, 3));
-*/
+
 
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
@@ -216,3 +216,19 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 const winner = checkWinner(150, 70);
 
+*/
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const ages = [1990, 1965, 2005, 2010, 2020];
+
+const age1 = calcAge(ages[0]);
+const age2 = calcAge(ages[3]);
+const age3 = calcAge(ages[ages.length - 1]);
+
+console.log(age1, age2, age3);
+const years = [calcAge(ages[0]), calcAge(ages[2]), calcAge(ages[ages.length - 1])];
+
+console.log(years);
