@@ -216,7 +216,7 @@ function checkWinner(avgDolphins, avgKoalas) {
 
 const winner = checkWinner(150, 70);
 
-*/
+
 
 const calcAge = function (birthYear) {
     return 2037 - birthYear;
@@ -232,3 +232,33 @@ console.log(age1, age2, age3);
 const years = [calcAge(ages[0]), calcAge(ages[2]), calcAge(ages[ages.length - 1])];
 
 console.log(years);
+
+*/
+
+const friends = ['Michael', 'Steven', 'Peter'];
+// Add elements
+
+
+friends.push('Jay');
+console.log(friends);
+const newLenght = friends.unshift('Bob');
+console.log(friends);
+console.log(newLenght);
+
+// Remove elements
+
+friends.pop();
+console.log(friends);
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf('Steven'));
+
+console.log(friends.includes('Steven'));
+
+if (friends.includes('Steven')) {
+    console.log('I have friend called Steven');
+}
