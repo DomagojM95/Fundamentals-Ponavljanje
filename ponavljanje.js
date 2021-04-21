@@ -280,3 +280,11 @@ const totals = [(bills[0] + calcTip(bills[0])), (bills[1] + calcTip(bills[1])), 
 console.log(totals);
 
 */
+const domagoj = {
+    firstName: 'Domagoj',
+    lastName: 'Marković',
+    age: 2021 - 1995,
+    job: 'Tehničar',
+    friends: ['bob', 'kevin', 'mike', 'steve']
+};
+
