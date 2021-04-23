@@ -288,3 +288,18 @@ const domagoj = {
     friends: ['bob', 'kevin', 'mike', 'steve']
 };
 
+const intrestedIn = prompt('what do you whant to know aobut Domagoj? firstName, lastName, age, job, friends?');
+//console.log(domagoj[intrestedIn]);
+
+if (domagoj[intrestedIn]) {
+    console.log(domagoj[intrestedIn]);
+} else {
+    console.log('wrong reguest! what do you whant to know aobut Domagoj? firstName, lastName, age, job, friends?')
+}
+
+domagoj.location = 'Đakovo';
+domagoj['fejs'] = 'marka78';
+
+console.log(domagoj);
+
+console.log(`${domagoj.firstName} has ${domagoj.friends.length} and his best friend is ${domagoj.friends[0]}`);
