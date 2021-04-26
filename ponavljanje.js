@@ -279,7 +279,7 @@ const totals = [(bills[0] + calcTip(bills[0])), (bills[1] + calcTip(bills[1])), 
 
 console.log(totals);
 
-*/
+
 const domagoj = {
     firstName: 'Domagoj',
     lastName: 'Marković',
@@ -303,3 +303,32 @@ domagoj['fejs'] = 'marka78';
 console.log(domagoj);
 
 console.log(`${domagoj.firstName} has ${domagoj.friends.length} and his best friend is ${domagoj.friends[0]}`);
+
+*/
+
+const domagoj = {
+    firstName: 'Domagoj',
+    lastName: 'Marković',
+    birthYear: 1995,
+    job: 'Tehničar',
+    friends: ['bob', 'kevin', 'mike', 'steve'],
+    hasDriversLicence: false,
+
+    // calcAge: function () {
+    //     return 2037 - this.birthYear
+    //  }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()} years old ${domagoj.job}, and he has ${this.hasDriversLicence ? 'a' : 'no'} drivers licence`
+    }
+};
+domagoj.calcAge()
+
+console.log(domagoj.age);
+
+console.log(domagoj.getSummary());
