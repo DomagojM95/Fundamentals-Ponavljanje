@@ -304,7 +304,7 @@ console.log(domagoj);
 
 console.log(`${domagoj.firstName} has ${domagoj.friends.length} and his best friend is ${domagoj.friends[0]}`);
 
-*/
+
 
 const domagoj = {
     firstName: 'Domagoj',
@@ -332,3 +332,36 @@ domagoj.calcAge()
 console.log(domagoj.age);
 
 console.log(domagoj.getSummary());
+
+*/
+
+
+const mike = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBIM: function () {
+        this.bmi = this.mass / (this.height * this.height)
+        return this.bmi;
+    }
+}
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 92,
+    height: 1.95,
+
+    calcBIM: function () {
+        this.bmi = this.mass / (this.height * this.height)
+        return this.bmi;
+
+    }
+}
+
+console.log(mike.calcBIM());
+console.log(john.calcBIM());
+
+console.log(`${mike.firstName} ${mike.lastName} BMI (${mike.bmi}) is higher than ${john.firstName} ${john.lastName} BMI (${john.bmi})`);
