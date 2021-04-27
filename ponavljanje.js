@@ -333,7 +333,7 @@ console.log(domagoj.age);
 
 console.log(domagoj.getSummary());
 
-*/
+
 
 
 const mike = {
@@ -365,3 +365,9 @@ console.log(mike.calcBIM());
 console.log(john.calcBIM());
 
 console.log(`${mike.firstName} ${mike.lastName} BMI (${mike.bmi}) is higher than ${john.firstName} ${john.lastName} BMI (${john.bmi})`);
+
+*/
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`lifting weights repetition ${rep}`);
+}
