@@ -372,7 +372,7 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`lifting weights repetition ${rep}`);
 }
 
-*/
+
 
 const domagoj = [
     'Domagoj',
@@ -417,4 +417,26 @@ for (let i = 0; i < domagoj.length; i++) {
     if (typeof domagoj[i] === 'number') break;
     console.log(domagoj[i]);
 
+}
+
+*/
+
+const domagoj = [
+    'Domagoj',
+    'Markovič',
+    2021 - 1995,
+    'tehnicar',
+    ['bob', 'mike', 'john']
+];
+
+for (let i = domagoj.length - 1; i >= 0; i--) {
+    console.log(i, domagoj[i]);
+}
+
+for (let execersise = 1; execersise < 4; execersise++) {
+    console.log(`-----Starting execersice ${execersise}------`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Excersise: ${execersise} repetition ${rep}`);
+    }
 }
