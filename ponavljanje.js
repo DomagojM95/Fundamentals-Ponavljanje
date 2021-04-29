@@ -366,8 +366,55 @@ console.log(john.calcBIM());
 
 console.log(`${mike.firstName} ${mike.lastName} BMI (${mike.bmi}) is higher than ${john.firstName} ${john.lastName} BMI (${john.bmi})`);
 
-*/
+
 
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`lifting weights repetition ${rep}`);
+}
+
+*/
+
+const domagoj = [
+    'Domagoj',
+    'Markovič',
+    2021 - 1995,
+    'tehnicar',
+    ['bob', 'mike', 'john'],
+    true
+];
+
+const types = [];
+
+for (let i = 0; i < domagoj.length; i++) {
+    //reading array
+    console.log(domagoj[i], typeof domagoj[i]);
+    // filling array
+    //types[i] = typeof domagoj[i];
+    types.push(typeof domagoj[i])
+}
+
+console.log(types);
+
+
+const years = [1991, 2000, 2005, 1856];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+console.log('-------------------------');
+
+for (let i = 0; i < domagoj.length; i++) {
+    if (typeof domagoj[i] !== 'string') continue;
+    console.log(domagoj[i]);
+
+}
+
+
+for (let i = 0; i < domagoj.length; i++) {
+    if (typeof domagoj[i] === 'number') break;
+    console.log(domagoj[i]);
+
 }
