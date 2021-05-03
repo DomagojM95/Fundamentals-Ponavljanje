@@ -430,7 +430,7 @@ const domagoj = [
 ];
 
 for (let i = domagoj.length - 1; i >= 0; i--) {
-    console.log(i, domagoj[i]);
+    //console.log(i, domagoj[i]);
 }
 
 for (let execersise = 1; execersise < 4; execersise++) {
@@ -440,3 +440,26 @@ for (let execersise = 1; execersise < 4; execersise++) {
         console.log(`Excersise: ${execersise} repetition ${rep}`);
     }
 }
+
+
+/*
+for (let rep = 1; rep <= 10; rep++) {
+    //console.log(`lifting weights ${rep}`);
+};
+
+let rep = 1;
+while (rep <= 10) {
+    //console.log(`WHILE: lifting weights ${rep}`);
+    rep++;
+};
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`you rolled ${dice} `);
+    dice = Math.trunc(Math.random() * 6) + 1;
+    if (dice === 6) {
+        console.log('loop is about to end...');
+    };
+};
+*/
